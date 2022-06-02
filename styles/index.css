@@ -1,0 +1,85 @@
+html {
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.processing-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+
+.processing-item img {
+  position: absolute;
+  width: 150px;
+}
+
+.processing-label {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 25px;
+}
+
+.processing-container div:nth-child(1) {
+  transform: translateX(-2000px);
+  animation: bild1 1s backwards 1s;
+}
+.processing-container div:nth-child(2) {
+  transform: translateX(-2000px);
+  animation: bild2 1s backwards 2s;
+}
+.processing-container div:nth-child(3) {
+  transform: translateX(-2000px);
+  animation: bild3 1s backwards 3s;
+}
+.processing-container div:nth-child(4) {
+  transform: translateX(-2000px);
+  animation: bild4 1s backwards 4s;
+}
+.processing-container div:nth-child(5) {
+  transform: translateY(-2000px);
+  animation: bild5 1s forwards 5s;
+}
+
+@keyframes bild1 {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes bild2 {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes bild3 {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes bild4 {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes bild5 {
+  to {
+    transform: translateY(0);
+  }
+}
